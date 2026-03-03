@@ -47,10 +47,10 @@ def run_threading_tasks():
 
 # 3. Process Pool: 
 def calculate_bullet_physics(trajectory_id):
-    print(f"[Process] Calculating bullet physics for ID: {trajectory_id}...")
-    
+    # ปิด print เพื่อไม่ให้ Git Bash ค้าง
+    # print(f"[Process] Calculating bullet physics for ID: {trajectory_id}...")
     result = sum(math.sqrt(i) for i in range(5_000_000))
-    print(f"[Process] Physics ID {trajectory_id} calculated.")
+    # print(f"[Process] Physics ID {trajectory_id} calculated.")
     return trajectory_id, result
 
 def run_process_pool_tasks():
